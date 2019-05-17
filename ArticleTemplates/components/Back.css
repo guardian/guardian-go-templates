@@ -1,0 +1,59 @@
+.back {
+    z-index: 2;
+    position: fixed;
+    bottom: 24px;
+    right: 12px;
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+    overflow: hidden;
+    background: rgb(199, 208, 202);
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+    opacity: .9;
+}
+
+.back.complete {
+    background-color: #091a36;
+}
+
+.back.complete svg {
+    background-color: #091a36;
+}
+
+.back svg {
+    fill: #fff;
+    font-size: 40px;
+    position: absolute;
+    line-height: 60px;
+    width: 60px;
+    text-align: center;
+    background: rgb(199, 208, 202);
+    vertical-align: middle;
+    height: 40px;
+    top: 10px;
+    left: 10px;
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
+}
+
+.close-x {
+    stroke: white;
+    fill: transparent;
+    stroke-linecap: round;
+    stroke-width: 3;
+}
+
+html.night-mode .meta__byline {
+    color: white;
+}
+
+html.night-mode .back.complete {
+    background-color: rgb(239, 133, 54);
+}
+
+html.night-mode .back.complete svg {
+    background-color: rgb(239, 133, 54);
+}
